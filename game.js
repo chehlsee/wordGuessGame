@@ -21,7 +21,7 @@ var lettersGuessedHTML = document.getElementById("lettersGuessed");
 var alphabetArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 // 3 letter words for common household pets 
 var alphabet = getAlphabetArray();
-var wordArray = ["cat", "dog", "pig", "rat"];
+var wordArray = ["cat", "dog", "pig", "rat", "cow"];
 var word = "dog";
 var placeholders = ['_','_','_'];
 var winTotal = 0;

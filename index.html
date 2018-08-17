@@ -6,25 +6,32 @@
   <title>Chelsea's Hangman</title>
 
 
-<link href="style.css" rel="stylesheet">
+<link href="reset.css" rel="stylesheet">
 
 </head>
 
 <body>
+    <!--audio file from youtube using click to play in the background I can't get this file to work-->
+        <audio controls>
+                <source src="https://www.youtube.com/embed/DejfF1V-wlU" type="audio/mpeg">
+              </audio>
+<!-- embedded code from youtube with farm sounds -->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/DejfF1V-wlU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
     <div id="container">
         WORD: <span id="theWord"></span><br>
         WINS: <span id="winTotal"></span><br>
         LOSSES: <span id="lossCount"></span><br>
         LIVES LEFT: <span id="user-lives">4</span><br>
         LETTERS GUESSED: <span id="lettersGuessed"></span><br>
-        <h1> Common Household Pet</h1>
+        <h1>Farm Animals</h1>
      <span id="placeholders"></span>
     
         <img id="hangman" alt="hangman-image" src="http://www.justhangman.com/images/hangman_0.gif">
     
     </div>
 
-    <script src="script.js"></script>
+    <script src="game.js"></script>
 
     </body>
     </html>
