@@ -22,7 +22,7 @@ var alphabetArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
 // 3 letter words for common household pets 
 var alphabet = getAlphabetArray();
 var wordArray = ["cat", "dog", "pig", "rat", "cow"];
-var word = "dog";
+var word = "";
 var placeholders = ['_','_','_'];
 var winTotal = 0;
 var lossCount =0;
@@ -39,9 +39,10 @@ function inititalizeGame() {
     lettersGuessed = [];
     // get new word at random
     word = wordArray[Math.floor(Math.random() * wordArray.length)];
+    // console log the word answer
+    console.log(word);
     placeholdersHTML.innerHTML = placeholders;
     // write new word to page
-    wordHTML.textContent = word;
 }
 inititalizeGame()
 
@@ -69,6 +70,7 @@ document.onkeyup = function (event) {
     if (word.indexOf(userGuess) > -1) {
         alert("You guessed a correct letter");
         correct = correct + 1;
+        var position = word.indexOf(userGuess);
 
     // create a for-loop to go through all letters in alphabet array
     for ( var i = 0; i < placeholders.length; i++) {
@@ -78,6 +80,10 @@ document.onkeyup = function (event) {
             winTotal++;
             winTotalHTML.textContent = winTotal; 
             inititalizeGame();
+            placeholders[position] = userGuess;
+            placeholdersHTML.innerHTML = placeholders;
+            //console log how where the letter guessed is in position
+            console.log(position);
         }}
     
         // if you have 0 lives alert you lost
