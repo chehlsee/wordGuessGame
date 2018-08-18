@@ -81,6 +81,8 @@ document.onkeyup = function (event) {
             winTotalHTML.textContent = winTotal; 
             inititalizeGame();
             placeholders[position] = userGuess;
+            //placeholderHTML show user guess in correct position
+            //this is only working for the last placeholder and I'm not sure why
             placeholdersHTML.innerHTML = placeholders;
             //console log how where the letter guessed is in position
             console.log(position);
