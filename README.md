@@ -9,7 +9,7 @@ In this assignment, you'll try to guess the word in this Farm Animal themed app.
 
 1. Create a new GitHub repo called `Word Guess Game`. Then, clone it to your computer.
 
-Now, open the local application on port 8080 at the URL: http://localhost:8080/.
+Now, open the local application on port 8080 at the URL: https://chehlsee.github.io/wordGuessGame/.
 
 # Copyright
  (C) Chehlsee 2018. All Rights Reserved.
